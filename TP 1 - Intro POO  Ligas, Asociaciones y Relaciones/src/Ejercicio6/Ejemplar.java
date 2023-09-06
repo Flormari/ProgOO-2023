@@ -1,4 +1,4 @@
-package Ejercicio1;
+package Ejercicio6;
 
 public class Ejemplar {
     //Atributos
