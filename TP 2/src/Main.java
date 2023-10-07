@@ -4,15 +4,12 @@ import Ejercicio2.AgenciaDeTurismo;
 import Ejercicio2.Clasificacion;
 import Ejercicio2.Provedor;
 import Ejercicio3.*;
-import Ejercicio4.CuentaCredito;
-import Ejercicio4.CuentaNormal;
 
 import java.time.LocalDate;
-import java.util.Scanner;
 
 public class Main {
     public static void main (String[] arg){
-        /*
+
         //--------------------[[EJERCICIO 1]]--------------------
         System.out.println("EJERCICIO 1");
         ClubDeFutbol club = new ClubDeFutbol(100);
@@ -127,114 +124,6 @@ public class Main {
         System.out.println("-------------");
         System.out.println(" ");
         System.out.println("La disciplina de mayor ingreso es: " + secretaria.disciplinaMayorIngreso());
-
-
-        //--------------------[[EJERCICIO 4]]--------------------
-        //cuenta normal
-        CuentaNormal cuenta = new CuentaNormal();
-        CuentaCredito cuentaCredito = new CuentaCredito();
-        Usuario c1 = new Usuario("Luz", cuenta, cuentaCredito);
-        Scanner sc = new Scanner(System.in);
-        double monto;
-        System.out.println("Ingrese el saldo a agregar a su billetera normal: ");
-        monto = sc.nextDouble();
-        c1.agregarSaldo(monto);
-
-        //Mostar estado
-        System.out.println("saldo actual: " + c1.getSaldo());
-        System.out.println("limite sobregiro: " + c1.getLimiteGiroEnDescubierto());
-
-        System.out.println("Ingrese el monto a gastar: ");
-        monto = sc.nextDouble();
-
-        c1.gastar(monto);
-        System.out.println("saldo actual: " + c1.getSaldo());
-        System.out.println("Giro en descubierto utilizado: " + c1.getDeudaGiroDescubierto());
-
-        System.out.println("Ingrese el saldo a agregar a su billetera normal: ");
-        monto = sc.nextDouble();
-        c1.agregarSaldo(monto);
-
-        System.out.println("saldo actual: " + c1.getSaldo());
-        System.out.println("Giro en descubierto utilizado: " + c1.getDeudaGiroDescubierto());
-        System.out.println("Ingrese el monto que desea invertir a su billetera normal: ");
-        monto = sc.nextDouble();
-
-        System.out.println("Ingrese cantidad de dias: ");
-        int dias = sc.nextInt();
-
-        if (c1.invertirSaldo(monto, dias)) {
-            System.out.println("El dinero invirtido: " + c1.getMontoInvertido());
-        } else {
-            System.out.println("No puede invertir nuevamenete.");
-        }
-        // intento depositar nuevamente.
-        if (!c1.invertirSaldo(monto, dias)) {
-            System.out.println("No puede invertir nuevamenete.");
-        }
-
-        //Cuenta credito
-        System.out.println("Monto para compras a credito: "  + c1.getMontoCompraCredito());
-        System.out.println("Saldo: "  + c1.getSaldoDeudor());
-        System.out.println("Ingrese el monto a usar en billetera a credito: ");
-        monto = sc.nextDouble();
-        c1.compraCredito(monto);
-        System.out.println("Saldo: "  + c1.getSaldoDeudor());
-        System.out.println("Monto para compras a credito: "  + c1.getMontoCompraCredito());
-        System.out.println("Ingrese el monto que desea pagar: ");
-        monto = sc.nextDouble();
-        c1.pagarCredito(monto);
-        System.out.println("Saldo: "  + c1.getSaldoDeudor());
-
-
-        //--------------------[[EJERCICIO 5]]--------------------
-        //Cuenta normal
-        Ejercicio5.CuentaNormal cuenta = new Ejercicio5.CuentaNormal();
-        CuentaCredito cuentaCredito = new CuentaCredito();
-        Ejercicio5.Usuario c1 = new Ejercicio5.Usuario("Franco", cuenta, Ejercicio5.CuentaCredito);
-        Scanner sc = new Scanner(System.in);
-        double monto;
-        System.out.println("Ingrese el saldo a agregar a su billetera normal: ");
-        monto = sc.nextDouble();
-        c1.agregarSaldo(monto);
-
-        System.out.println("saldo actual: " + c1.getSaldo());
-        System.out.println("limite sobregiro: " + c1.getLimiteGiroEnDescubierto());
-
-        System.out.println("Ingrese el monto que desea invertir: ");
-        monto = sc.nextDouble();
-        System.out.println("Ingrese cantidad de dias: ");
-        int dias = sc.nextInt();
-        if (c1.invertirSaldo(monto, dias)) {
-            System.out.println("dinero invertido: " + c1.getMontoInvertido());
-        } else {
-            System.out.println("No puede invertir nuevamenete.");
-        }
-
-        System.out.println("Ingrese el monto a gastar: ");
-        monto = sc.nextDouble();
-        c1.gastar(monto, true);
-        System.out.println("Monto actual: " + c1.getSaldo());
-        System.out.println("Giro en descubierto: " + c1.getDeudaGiroDescubierto());
-        System.out.println("Ingrese el saldo a agregar a su billetera normal: ");
-        monto = sc.nextDouble();
-        c1.agregarSaldo(monto);
-        System.out.println("Monto actual: " + c1.getSaldo());
-        System.out.println("Giro en descubierto utilizado: " + c1.getDeudaGiroDescubierto());
-        System.out.println("Ingrese el saldo a agregar a su billetera normal: ");
-        monto = sc.nextDouble();
-        System.out.println("Cantidad de dias: ");
-        dias = sc.nextInt();
-        if (c1.invertirSaldo(monto, dias)) {
-            System.out.println("Dinero invertido: " + c1.getMontoInvertido());
-        } else {
-            System.out.println("No puede invertir nuevamenete.");
-        }
-        if (!c1.invertirSaldo(monto, dias)) {
-            System.out.println("No puede invertir nuevamenete.");
-        }
-        */
-        //--------------------[[EJERCICIO 6]]--------------------
 
     }
 }
